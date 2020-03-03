@@ -148,4 +148,10 @@ function genBox(root){
 	}
 }
 
-genBox(root)
+
+if(window.screen.width >= 700){
+	genBox(root)
+} else {
+	root.remove()
+	alert("This game cannot be open at this device. Only resolution equal to or greater than 700 pixels.")
+}
