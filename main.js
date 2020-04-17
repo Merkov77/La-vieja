@@ -3,10 +3,10 @@ let root = document.getElementById("root")
 
 
 function alertt(root, message){
-	let fonAlert = document.createElement("div")
+	const fonAlert = document.createElement("div")
 	fonAlert.classList.add("fonAlert")
 	
-	let newAlert = document.createElement("div")
+	const newAlert = document.createElement("div")
 	newAlert.classList.add("newAlert")
 
 	newAlert.textContent = message
@@ -36,8 +36,8 @@ function genBox(root){
 
 
 	let timeAlert = 2000
-	let box; let cbox; let bol = false;
-	let boxes = {}
+	const box; const cbox; let bol = false;
+	const boxes = {}
 	let countClick = 1;
 	for (let x = 1; x < 10; x++){
 		cbox = document.createElement("div")
